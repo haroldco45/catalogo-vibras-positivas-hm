@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibras Positivas HM - Catálogo de Ventas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .btn-whatsapp { background-color: #25d366; transition: all 0.3s ease; }
+        .btn-whatsapp:hover { transform: scale(1.05); filter: brightness(1.1); }
+        .price-tag { color: #22c55e; font-weight: bold; }
+    </style>
+</head>
+<body class="pb-20">
+
+    <header class="p-6 text-center border-b border-slate-800">
+        <div class="flex justify-center mb-4">
+            <div class="w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center text-3xl font-bold">VP</div>
+        </div>
+        <h1 class="text-2xl font-bold tracking-tight">VIBRAS POSITIVAS HM</h1>
+        <p class="text-slate-400 text-sm mt-1">Soluciones Digitales de Alto Impacto</p>
+    </header>
+
+    <section class="max-w-md mx-auto p-4 mt-4">
+        <div class="glass-card p-4 rounded-2xl">
+            <label class="block text-sm font-medium mb-3 text-center">¿Con quién deseas hablar?</label>
+            <div class="flex gap-2">
+                <button onclick="setVendedor('3117700431', 'Harold')" id="btn-harold" class="flex-1 py-2 px-4 rounded-xl border border-emerald-500 bg-emerald-500/20 text-sm active">Harold (Director)</button>
+                <button onclick="setVendedor('3122350937', 'Eliana')" id="btn-eliana" class="flex-1 py-2 px-4 rounded-xl border border-slate-600 text-sm">Eliana (Ventas)</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-md mx-auto p-4 space-y-4">
+        
+        <div class="glass-card rounded-2xl overflow-hidden">
+            <div class="p-5">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-lg">Tarjetas Digitales Pro</h3>
+                    <span class="price-tag text-sm">$50.000 / Anual</span>
+                </div>
+                <p class="text-slate-400 text-sm mt-2">Tu presentación profesional en un link o código QR interactivo.</p>
+                <button onclick="pedir('Tarjeta Digital Pro')" class="w-full mt-4 py-3 rounded-xl btn-whatsapp font-bold text-slate-900"><i class="fab fa-whatsapp mr-2"></i>Me interesa</button>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-2xl overflow-hidden">
+            <div class="p-5">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-lg">Jingles & Música</h3>
+                    <span class="price-tag text-sm">$50.000 / Único</span>
+                </div>
+                <p class="text-slate-400 text-sm mt-2">Audio branding y publicidad sonora para potenciar tu marca.</p>
+                <button onclick="pedir('Jingles y Música')" class="w-full mt-4 py-3 rounded-xl btn-whatsapp font-bold text-slate-900"><i class="fab fa-whatsapp mr-2"></i>Pedir Demo</button>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-2xl overflow-hidden">
+            <div class="p-5">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-lg">Plataformas de Movilidad</h3>
+                    <span class="price-tag text-sm">$10.000 / Mensual</span>
+                </div>
+                <p class="text-slate-400 text-sm mt-2">Sistemas para Mototaxis, Taxis y Domicilios. Control total.</p>
+                <button onclick="pedir('Plataforma de Movilidad')" class="w-full mt-4 py-3 rounded-xl btn-whatsapp font-bold text-slate-900"><i class="fab fa-whatsapp mr-2"></i>Suscribirme</button>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-2xl overflow-hidden">
+            <div class="p-5">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-lg">Apps Administrativas</h3>
+                    <span class="price-tag text-sm">$30k - $50k / Mes</span>
+                </div>
+                <p class="text-slate-400 text-sm mt-2">Gestión de inventarios y ventas. Control desde tu celular.</p>
+                <button onclick="pedir('App Administrativa')" class="w-full mt-4 py-3 rounded-xl btn-whatsapp font-bold text-slate-900"><i class="fab fa-whatsapp mr-2"></i>Consultar</button>
+            </div>
+        </div>
+
+        <div class="glass-card rounded-2xl overflow-hidden border-dashed border-emerald-500/50">
+            <div class="p-5">
+                <h3 class="font-bold text-lg">Páginas Web & Apps a Medida</h3>
+                <p class="text-slate-400 text-sm mt-2">Diseños únicos según tus requerimientos específicos.</p>
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Bajo Cotización</span>
+                <button onclick="pedir('Cotización Web/App a medida')" class="w-full mt-4 py-3 rounded-xl border border-emerald-500 text-emerald-500 font-bold hover:bg-emerald-500 hover:text-white transition-all"><i class="fas fa-file-invoice-dollar mr-2"></i>Cotizar Proyecto</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="fixed bottom-0 w-full glass-card p-4 text-center text-[10px] text-slate-500">
+        App desarrollada por <strong>VIBRAS POSITIVAS HM</strong> - Derechos de Autor (3117700431)
+    </footer>
+
+    <script>
+        let numVendedor = '3117700431';
+        let nombreVendedor = 'Harold';
+
+        function setVendedor(numero, nombre) {
+            numVendedor = numero;
+            nombreVendedor = nombre;
+            // Estética de botones
+            document.getElementById('btn-harold').className = numero === '3117700431' ? 'flex-1 py-2 px-4 rounded-xl border border-emerald-500 bg-emerald-500/20 text-sm' : 'flex-1 py-2 px-4 rounded-xl border border-slate-600 text-sm';
+            document.getElementById('btn-eliana').className = numero === '3122350937' ? 'flex-1 py-2 px-4 rounded-xl border border-emerald-500 bg-emerald-500/20 text-sm' : 'flex-1 py-2 px-4 rounded-xl border border-slate-600 text-sm';
+        }
+
+        function pedir(servicio) {
+            const mensaje = `Hola ${nombreVendedor}, vengo de la página de VIBRAS POSITIVAS HM y me interesa el servicio: ${servicio}.`;
+            const url = `https://api.whatsapp.com/send?phone=57${numVendedor}&text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
